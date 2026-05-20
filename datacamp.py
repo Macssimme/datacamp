@@ -3,8 +3,11 @@ import pandas as pd
 from pathlib import Path
 import plotly.express as px
 
-st.set_page_config(page_title="Base prospects tourisme", layout="wide")
-
+st.set_page_config(
+    page_title="DataTourisme Quadria",
+    page_icon="https://quadria-ppr.inr.ag/content/uploads/2026/05/QUADRIA_LOGO_Q_V.png",
+    layout="wide"
+)
 
 COMMERCIAL_MAP_CANDIDATES = [
     "affectation_commerciaux.csv",
