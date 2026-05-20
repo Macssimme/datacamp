@@ -5,7 +5,7 @@ import plotly.express as px
 
 st.set_page_config(
     page_title="DataTourisme Quadria",
-    page_icon="https://quadria-ppr.inr.ag/content/uploads/2026/05/QUADRIA_LOGO_Q_V.png",
+    page_icon="https://quadria-ppr.inr.ag/content/uploads/2026/05/QUADRIA_LOGO_FLECHE_BLANC.png",
     layout="wide"
 )
 
