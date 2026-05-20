@@ -59,7 +59,7 @@ def load_commercial_mapping():
             # nécessite openpyxl si xlsx
             df_map = pd.read_excel(path, dtype=str).fillna("")
         else:
-            df_map = pd.read_csv(path, dtype=str).fillna("")
+            df_map = pd.read_csv(path, sep=";", dtype=str, encoding="utf-8").fillna("")
     except Exception as e:
         return None, f"Impossible de lire {path.name}: {e}"
 
@@ -93,7 +93,7 @@ def load_coords():
         if path.suffix.lower() in [".xlsx", ".xls"]:
             dfc = pd.read_excel(path, dtype=str).fillna("")
         else:
-            dfc = pd.read_csv(path, dtype=str).fillna("")
+            dfc = pd.read_csv(path, sep=";", dtype=str, encoding="utf-8").fillna("")
     except Exception as e:
         return None, f"Impossible de lire {path.name}: {e}"
 
